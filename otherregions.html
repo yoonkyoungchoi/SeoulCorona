@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>자치구별 확진자 현황</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="StyleSheet" href="css/corona.css">
+	<script src="js/otherregions.js"></script>
+</head>
+<body>
+    <div id="main">
+        자치구별 확진자 현황(누적수)
+        <span style="font-size:30px;cursor:pointer;position:relative;right:-31%;top:0.06%;" onclick="openBar()">&#9776;</span><!--메뉴 아이콘 표시 및 위치 설정-->
+    </div>
+
+    <div id="mySidenav" class="sidenav"><!-- 메뉴 안에 들어가는 내용-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+        <a href="index.html" target="_self">서울시 코로나 확진자 정보</a><p>
+        <a href="coronainfo.html" target="_self">코로나 정보</a>
+        <a href="otherregions.html" target="_self">자치구별 확진자 현황</a>
+        <a href="corona_poster.html" target="_self">코로나 예방 포스터</a>
+      </div>
+
+    <div data-role="header"
+		style="background:rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center; height: 15px; font-size: 9pt; padding: 7px;">
+		현재 시간을 기반으로 수시로 업데이트 되고 있습니다.
+    </div>
+
+    <div id="other"></div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>코로나 포스터</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+	<link rel="StyleSheet" href="css/corona.css">
+	<script src="js/bar.js"></script>
+</head>
+<body>
+    <div id="main">
+        코로나 포스터
+        <span style="font-size:30px;cursor:pointer;position:relative;right:-40%;top:0.06%;" onclick="openBar()">&#9776;</span><!--메뉴 아이콘 표시 및 위치 설정-->
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+        <a href="index.html" target="_self">서울시 코로나 확진자 정보</a><p>
+        <a href="coronainfo.html" target="_self">코로나 정보</a>
+        <a href="otherregions.html" target="_self">자치구별 확진자 현황</a>
+        <a href="corona_poster.html">코로나 예방 포스터</a>
+      </div>
+    <br>
+    <center>
+    <h3>이미지를 클릭해보세요!</h3>
+    <br>
+    </center>
+    <div class="row justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="row">
+                    <a href="img/corona.png" data-toggle="lightbox" class="col-sm-4" data-title="코로나 예방행동수칙" data-footer="예방수칙을 잘 지켜 코로나를 예방합시다!">
+                        <img src="img/corona.png" class="img-fluid rounded">
+                    </a>
+                    <a href="img/corona1.jpg" data-toggle="lightbox" data-title="올바른 손씻기" data-footer="올바른 손씻기와 기침예절로 감염병 예방!" class="col-sm-4">
+                        <img src="img/corona1.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/corona2.jpg" data-toggle="lightbox" data-title="의료기관 수칙" data-footer="의료인이 꼭 기억해야 할 수칙" class="col-sm-4">
+                        <img src="img/corona2.jpg" class="img-fluid rounded">
+                    </a>
+                </div>
+                <br>
+                <div class="row">
+                    <a href="img/corona3.jpg" data-toggle="lightbox" class="col-sm-4" data-title="슬기로운 학교생활" data-footer="학교에서 방역수칙을 잘 지켜봐요!">
+                        <img src="img/corona3.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/corona4.jpg" data-toggle="lightbox" data-title="기억해야 할 국민수칙" data-footer="꼭 지킵시다!" class="col-sm-4">
+                        <img src="img/corona4.jpg" class="img-fluid rounded">
+                    </a>
+                    <a href="img/corona5.jpg" data-toggle="lightbox" data-title="코로나 예방수칙" data-footer="예방수칙을 잘 지켜 코로나 예방!" class="col-sm-4">
+                        <img src="img/corona5.jpg" class="img-fluid rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+        
+</body>
+</html>

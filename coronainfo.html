@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>코로나 정보</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+	<link rel="StyleSheet" href="css/corona.css">
+	<script src="js/bar.js"></script>
+</head>
+<body>
+    <div id="main">
+        코로나 정보
+        <span style="font-size:30px;cursor:pointer;position:absolute;right:2%;top:1%;" onclick="openBar()">&#9776;</span><!--메뉴 아이콘 표시 및 위치 설정-->
+    </div>
+
+    <div id="mySidenav" class="sidenav"><!-- 메뉴 안에 들어가는 내용-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+        <a href="index.html" target="_self">서울시 코로나 확진자 정보</a><p>
+        <a href="coronainfo.html" target="_self">코로나 정보</a>
+        <a href="otherregions.html" target="_self">자치구별 확진자 현황</a>
+        <a href="corona_poster.html" target="_self">코로나 예방 포스터</a>
+      </div>
+
+    
+    <div class="main_text">
+    <br>
+    <h2>코로나란 ? </h2>
+    <br>
+    2019년 12월 <span class="red_text">중국 우한</span>에서 처음 발생한 이후 중국 전역과 전세계로 확산된 <span class="red_text">신종 바이러스</span><br>
+    호흡기 감염 질환으로 확진자의 침방울이 호흡기나 눈,코,입의 점막으로 침투될 때 점염된다.<br>
+    <br>
+    <h4>주요증상</h4>
+        <ui class="inside">
+            <li>발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실</li>
+            <li>그 외에 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, </li>
+            <li>어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등이 다양하게 나타남. <br> &nbsp;&nbsp;&nbsp;
+                (무증상자도 존재해 위험도가 높음.)</li>
+        </ui>
+    <br>
+    <h4><span class="red_text">치명률</span></h4>
+        <ui class="inside">
+            <li>전세계 치명률은 지역, 인구집단연령 구조, 감염 상태 및 기타 요인에 의해 0.1~25%로 다양함</li>
+            <li>전세계 치명률은 0.00%~1.63% (중위값 0.27%)로 보정 후 0.00~1.54%(중위값 0.23%) </li>
+        </ui>      
+    <br>
+    <h3>코로나를 <span class="blue_text">예방</span>하기 위해선</h3>
+        <ui class="inside">
+            <li>식약처에서 승인된 코로나19 백신</li>
+            <li>올바른 손씻기 </li>
+            <li>기침 예절 준수</li>
+            <li>씻지 않은 손으로 눈, 코, 입 만지지 않기</li>
+            <li>주위 환경을 자주 소독하고 환기하기</li>
+        </ui> 
+    <br>
+    <iframe width="650" height="350" src="https://www.youtube.com/embed/24jc8mnov9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
